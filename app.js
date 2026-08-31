@@ -4,7 +4,7 @@ const API_URL = "https://YOUR-API.vercel.app";
 // GET ALL PERFUMES
 async function loadPerfumes() {
     try {
-        const response = await fetch(`${API_URL}/perfumes`);
+        const response = await fetch(`${fragrance-finder-orpin.vercel.app}/perfumes`);
         const data = await response.json();
         displayPerfumes(data.perfumes);
     }
