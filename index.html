@@ -6,36 +6,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Fragrance Finder</title>
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
+
     <header>
-        <h1>Fragrance Recommendations</h1>
-        <p> A website powered by a REST API </p>
+        <h1>Fragrance Finder</h1>
+        <span>- luxury scents, affordable dupes</span>
     </header>
+
     <main>
 
-        <!-- SEARCH -->
         <section class="search">
-            <input type="text" id="searchInput" placeholder="Search for a fragrance...">
-            <button onclick="searchPerfumes()"> Search </button>
-            <button class="secondary" onclick="loadPerfumes()"> Show All </button>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search perfume, brand, or note..."
+            >
+
+            <button onclick="searchPerfumes()">
+                Search
+            </button>
+
+            <button
+                class="secondary"
+                onclick="loadPerfumes()"
+            >
+                Show All
+            </button>
 
         </section>
 
         <section>
+
             <h2>Fragrances</h2>
+
             <div id="perfumeList" class="perfume-list">
                 Loading fragrances...
             </div>
+
         </section>
+
     </main>
 
     <footer>
-        <p> Data provided by the Simple Fragrance API </p>
+        <p>Data provided by the Simple Fragrance API</p>
     </footer>
+
     <script src="app.js"></script>
+
 </body>
+
 </html>
