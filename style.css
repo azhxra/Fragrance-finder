@@ -11,10 +11,14 @@ body {
 }
 
 header {
-    background: #3b1f2b;
+    background-image: url("header.jpg");
+    background-size: 600px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;
+    height: 200px;
     color: white;
     text-align: center;
-    padding: 40px 20px;
 }
 
 header h1 {
